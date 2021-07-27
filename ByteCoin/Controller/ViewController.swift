@@ -9,6 +9,9 @@
 import UIKit
 
 class ViewController: UIViewController {
+    @IBOutlet weak var bitCoinLabel: UILabel!
+    @IBOutlet weak var currrencyLabel: UILabel!
+    @IBOutlet weak var currencyPicker: UIPickerView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
