@@ -16,6 +16,7 @@
 		ADA8AC202329398300626376 /* CoinManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA8AC1F2329398300626376 /* CoinManager.swift */; };
 		DA1E43F626B0B1C600A7C22D /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = DA1E43F526B0B1C600A7C22D /* .gitignore */; };
 		DA1E43F826B0B1E100A7C22D /* Secrets.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1E43F726B0B1E100A7C22D /* Secrets.swift */; };
+		DAC17CC426B49A4900C181E0 /* CoinData.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC17CC326B49A4900C181E0 /* CoinData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		ADA8AC1F2329398300626376 /* CoinManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinManager.swift; sourceTree = "<group>"; };
 		DA1E43F526B0B1C600A7C22D /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		DA1E43F726B0B1E100A7C22D /* Secrets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Secrets.swift; sourceTree = "<group>"; };
+		DAC17CC326B49A4900C181E0 /* CoinData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 			isa = PBXGroup;
 			children = (
 				ADA8AC1F2329398300626376 /* CoinManager.swift */,
+				DAC17CC326B49A4900C181E0 /* CoinData.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -172,6 +175,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DAC17CC426B49A4900C181E0 /* CoinData.swift in Sources */,
 				ADA8AC202329398300626376 /* CoinManager.swift in Sources */,
 				DA1E43F826B0B1E100A7C22D /* Secrets.swift in Sources */,
 				ADA8AC0D2329367100626376 /* ViewController.swift in Sources */,
