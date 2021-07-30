@@ -1,5 +1,5 @@
 //
-//  CoinData.swift
+//  CoinModel.swift
 //  ByteCoin
 //
 //  Created by Isaias Pomales on 7/30/21.
@@ -8,7 +8,11 @@
 
 import Foundation
 
-struct CoinData: Codable {
+struct CoinModel {
     let rate: Double
-    let asset_id_quote: String
+    let currency: String
+    
+    var rateString: String {
+        return String(format: "%.2f", rate)
+    }
 }

@@ -8,11 +8,18 @@
 
 import Foundation
 
+protocol CoinManagerDelegate {
+    func didUpdatePrice(_ coinManager: CoinManager,_ coinModel: CoinModel)
+    func didFailWithError(error: Error)
+}
+
 struct CoinManager {
     let secret: Secrets
     let baseURL: String
     let apiKey: String
     let currencyArray: [String]
+    
+    var delegate: CoinManagerDelegate?
     
     init() {
         self.secret = Secrets()
@@ -22,7 +29,6 @@ struct CoinManager {
     }
     
     func getCoinPrice(for currency: String) {
-        print(currency)
         let url = "\(baseURL)/\(currency)?apikey=\(apiKey)"
         performRequest(with: url)
     }
@@ -37,21 +43,23 @@ struct CoinManager {
                 }
                 
                 if let safeData = data {
-                    let bitcoinPrice = self.parseJSON(safeData)
-                    print(bitcoinPrice!)
+                    if let coinModel = self.parseJSON(safeData) {
+                        delegate?.didUpdatePrice(self, coinModel)
+                    }
                 }
             }
             task.resume()
         }
     }
     
-    func parseJSON(_ data: Data) -> Double? {
+    func parseJSON(_ data: Data) -> CoinModel? {
         let decoder = JSONDecoder()
         
         do {
             let decodedData = try decoder.decode(CoinData.self, from: data)
-            return decodedData.rate
+            return CoinModel(rate: decodedData.rate, currency: decodedData.asset_id_quote)
         } catch {
+            delegate?.didFailWithError(error: error)
             return nil
         }
     }

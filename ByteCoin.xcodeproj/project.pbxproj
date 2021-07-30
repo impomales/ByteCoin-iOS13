@@ -17,6 +17,7 @@
 		DA1E43F626B0B1C600A7C22D /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = DA1E43F526B0B1C600A7C22D /* .gitignore */; };
 		DA1E43F826B0B1E100A7C22D /* Secrets.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1E43F726B0B1E100A7C22D /* Secrets.swift */; };
 		DAC17CC426B49A4900C181E0 /* CoinData.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC17CC326B49A4900C181E0 /* CoinData.swift */; };
+		DAC17CC626B4A0C600C181E0 /* CoinModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC17CC526B4A0C600C181E0 /* CoinModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		DA1E43F526B0B1C600A7C22D /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		DA1E43F726B0B1E100A7C22D /* Secrets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Secrets.swift; sourceTree = "<group>"; };
 		DAC17CC326B49A4900C181E0 /* CoinData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinData.swift; sourceTree = "<group>"; };
+		DAC17CC526B4A0C600C181E0 /* CoinModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 			children = (
 				ADA8AC1F2329398300626376 /* CoinManager.swift */,
 				DAC17CC326B49A4900C181E0 /* CoinData.swift */,
+				DAC17CC526B4A0C600C181E0 /* CoinModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -130,7 +133,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1100;
-				LastUpgradeCheck = 1100;
+				LastUpgradeCheck = 1250;
 				ORGANIZATIONNAME = "The App Brewery";
 				TargetAttributes = {
 					ADA8AC042329367100626376 = {
@@ -181,6 +184,7 @@
 				ADA8AC0D2329367100626376 /* ViewController.swift in Sources */,
 				ADA8AC092329367100626376 /* AppDelegate.swift in Sources */,
 				ADA8AC0B2329367100626376 /* SceneDelegate.swift in Sources */,
+				DAC17CC626B4A0C600C181E0 /* CoinModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -232,6 +236,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -292,6 +297,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
